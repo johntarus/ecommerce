@@ -4,9 +4,9 @@ import banner from "../assets/images/banner.png";
 function Home() {
   return (
     <div>
-      <div className="grid grid-cols-2 divide-x justify-items-center">
+      <div className="grid grid-cols-2 divide-x justify-items-center sm:grid-cols-1 md:grid-cols-1">
         <div className="mt-16 px-12">
-          <h2 className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833]  ">
+          <h2 className=" font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833] sm:text-sm md:text-2xl lg:text-3xl">
             ECOMMERCE COLLECTIONS <br /> WHERE FASHION MEETS DESIGN
           </h2>
           <p className="pt-4 text-lg">
