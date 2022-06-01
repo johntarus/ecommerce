@@ -4,7 +4,7 @@ import banner from "../../assets/images/banner.png";
 function Hero() {
   return (
     <div>
-      <div className="grid grid-cols-2 divide-x justify-items-center sm:grid-cols-1 md:grid-cols-1">
+      <div className="grid grid-cols-2 divide-x justify-items-center sm:grid-cols-1 md:grid-cols-1 mb-20">
         <div className="mt-16 px-12 sm:px-8">
           <h2 className=" font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833] sm:text-2xl md:text-2xl lg:text-3xl">
             FASHION DEALS <br /> YOU LOVE
