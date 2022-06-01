@@ -19,7 +19,7 @@ function Home() {
             slim fit styling.
           </p>
           <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white font-bold py-2 px-6 rounded-full mt-8">
-            Shop Now
+            Shop now
           </button>
         </div>
 
