@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className="bg-[#EDE6DB] px-12 rounded-lg sm:px-8 mb-12 pb-20">
+    <div className="bg-[#EDE6DB] px-12 rounded-lg sm:px-8 mb-4 pb-20">
       <h1 className="text-center font-bold text-4xl pt-36 mb-8 sm:pt-24">
         Fashop Overview
       </h1>
@@ -14,8 +14,8 @@ const Overview = () => {
         locations. We currently ship thousands of packages a week all across
         Kenya.
       </p>
-      <div class="flex flex-col justify-center items-center">
-        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+      <div className="flex flex-col justify-center items-center">
+        <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-[#ed4833] hover:border-transparent sm:w-36 sm:h-12 rounded">
           View More
         </button>
       </div>
