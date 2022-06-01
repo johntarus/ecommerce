@@ -10,8 +10,9 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink to="/" className="nav-logo">
-            Ecommerce
+          <NavLink to="/" className="nav-logo sm:text-2xl">
+            <i className="fa fa-cart-plus" aria-hidden="true"></i>
+            FASH<span className="text-purple-600">SHOP</span>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
