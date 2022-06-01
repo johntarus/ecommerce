@@ -5,11 +5,11 @@ function Hero() {
   return (
     <div>
       <div className="grid grid-cols-2 divide-x justify-items-center sm:grid-cols-1 md:grid-cols-1">
-        <div className="mt-16 px-12">
+        <div className="mt-16 px-12 sm:px-8">
           <h2 className=" font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833] sm:text-2xl md:text-2xl lg:text-3xl">
             FASHION DEALS <br /> YOU LOVE
           </h2>
-          <p className="pt-4 text-lg">
+          <p className="pt-4 text-xl">
             Designed for the jet-setter in mind, our shirt is the ideal blend of
             comfort and style. Built for the man who’s in demand, this classic
             design will keep you looking presentable on the go, with a gentle
