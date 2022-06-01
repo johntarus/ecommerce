@@ -2,8 +2,8 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className="bg-[#EDE6DB] px-12 rounded-lg sm:px-8 mb-4 pb-20">
-      <h1 className="text-center font-bold text-4xl pt-36 mb-8 sm:pt-24">
+    <div className="bg-[#EDE6DB] px-20 md:px-4 rounded-lg sm:px-8 mb-12 pb-20">
+      <h1 className="text-center font-bold text-4xl pt-36 md:pt-24 mb-8 sm:pt-24">
         Fashop Overview
       </h1>
       <p className="text-xl text-center text-[#525557] pb-12">
@@ -15,7 +15,7 @@ const Overview = () => {
         Kenya.
       </p>
       <div className="flex flex-col justify-center items-center">
-        <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-[#ed4833] hover:border-transparent sm:w-36 sm:h-12 rounded">
+        <button className="bg-purple-400 hover:bg-[#ECC488] text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent sm:w-36 sm:h-12 rounded">
           View More
         </button>
       </div>
