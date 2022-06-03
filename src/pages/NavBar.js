@@ -38,22 +38,12 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/blog"
+                to="/products"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                activeclassname="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Contact Us
+                Products
               </NavLink>
             </li>
           </ul>
@@ -62,6 +52,7 @@ function NavBar() {
           </div>
         </div>
       </nav>
+      <div className="user-container"></div>
     </>
   );
 }
