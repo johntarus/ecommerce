@@ -125,6 +125,7 @@ body {
     padding: 1.5rem;
     width: 100%;
     display: table;
+    margin: 0 auto;
   }
   .nav-logo {
     margin-left: 20px;
