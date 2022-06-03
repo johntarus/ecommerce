@@ -76,3 +76,5 @@ function NavBar() {
 }
 
 export default NavBar;
+
+/*Done with the design. What remains is the state management with the redux toolkit, User authentication withJWT, and handling newsletter form. #reactjs #redux #statemanagement */
