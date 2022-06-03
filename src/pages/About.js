@@ -1,11 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
 import about from "../assets/images/about.png";
 import Footer from "../components/Home/Footer";
 
 const About = () => {
+  const textAnimate = {
+    hidden: {
+      opacity: 0,
+      y: 25,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <div>
-      <div className="grid grid-cols-2 gap-8 px-28 sm:grid-cols-1 sm:px-6">
+      <motion.div
+        className="grid grid-cols-2 gap-8 px-28 sm:grid-cols-1 sm:px-8 sm:gap-0"
+        variants={textAnimate}
+        initial="hidden"
+        animate="visible"
+      >
         <img className="object-cover" src={about} alt="about" />
 
         <p className="mt-16 text-lg sm:mt-8">
@@ -21,7 +42,7 @@ const About = () => {
           novelty and experimentation; innovative displays and interiors; and an
           informality among owner, salespeople, and clientele.
         </p>
-      </div>
+      </motion.div>
       <Footer />
     </div>
   );
