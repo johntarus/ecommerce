@@ -48,21 +48,23 @@ function NavBar() {
             </li>
           </ul>
           <div className="flex">
-            <svg
-              className="w-8 h-8 sm:w-10 mr-12 mt-2 cursor-pointer lg:mt-6 lg:mr-32 md:mt-6 md:mr-32 sm:h-10 sm:mt-4 sm:mr-16 sm:ml-10"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-              ></path>
-            </svg>
-            <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white py-1 px-4 mr-12 mt-2 border  hover:border-transparent rounded lg:hidden md:hidden sm:hidden">
+            <div className="relative">
+              <svg
+                className="w-8 h-8 sm:w-10  mt-2 cursor-pointer lg:mt-6 lg:mr-32 md:mt-6 md:mr-32 sm:h-10 sm:mt-4 sm:mr-16 sm:ml-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                ></path>
+              </svg>
+            </div>
+            <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white py-1 px-4 mr-12 ml-12 mt-2 border  hover:border-transparent rounded lg:hidden md:hidden sm:hidden">
               Login
             </button>
           </div>
@@ -76,5 +78,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
-/*Done with the design. What remains is the state management with the redux toolkit, User authentication withJWT, and handling newsletter form. #reactjs #redux #statemanagement */
