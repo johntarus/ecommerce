@@ -10,7 +10,7 @@ const Products = () => {
             <img className="h-60 w-60" src={product.image} alt={product.name} />
             <h1>{product.name}</h1>
             <p>{product.price}</p>
-            <p>{product.description}</p>
+            {/* <p>{product.description}</p> */}
           </div>
         );
       })}
