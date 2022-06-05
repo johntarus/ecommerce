@@ -1,11 +1,21 @@
 import React from "react";
+import { products } from "../components/helpers/data";
 
 const Products = () => {
-  fetch("../components/data.json")
-    .then((res) => res.json())
-    .then((data) => console.log(data));
-
-  return <div>Products</div>;
+  return (
+    <div className="grid grid-cols-3">
+      {products.map((product) => {
+        return (
+          <div key={product.id}>
+            <img src={product.image} alt={product.name} />
+            <h1>{product.name}</h1>
+            <p>{product.price}</p>
+            <p>{product.description}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default Products;
