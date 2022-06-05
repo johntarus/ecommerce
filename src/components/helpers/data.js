@@ -15,6 +15,9 @@ import official from "../../assets/images/official.jpg";
 import ragged from "../../assets/images/ragged.jpg";
 import winterjackets from "../../assets/images/winter-jacks.jpg";
 import whiteshirt from "../../assets/images/white-shirt.jpg";
+import sneakers from "../../assets/images/sneakers.jpg";
+import Tshirt from "../../assets/images/product.jpg";
+import whitesneakers from "../../assets/images/white-sneaker.jpg";
 
 export const products = [
   {
@@ -152,5 +155,29 @@ export const products = [
     description:
       "We provide white shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
     image: whiteshirt,
+  },
+  {
+    id: 18,
+    name: "Sneakers",
+    price: "Ksh. 2500",
+    description:
+      "We provide the best quality sneakers for solid color for quality misty materials",
+    image: sneakers,
+  },
+  {
+    id: 19,
+    name: "Green Tshirt",
+    price: "Ksh. 550",
+    description:
+      "We supply the best quality for solid color tshirts for quality misty materials",
+    image: Tshirt,
+  },
+  {
+    id: 20,
+    name: "White Sneakers",
+    price: "Ksh. 3000",
+    description:
+      "We provide solid color sneakers with 100% cotton combined 30s best quality for solid color for quality misty materials",
+    image: whitesneakers,
   },
 ];
