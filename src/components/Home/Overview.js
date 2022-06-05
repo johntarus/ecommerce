@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Overview = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#EDE6DB] px-20 md:px-4 rounded-lg sm:px-8 mb-12 pb-20">
       <h1 className="text-center font-bold text-4xl pt-36 md:pt-24 mb-8 sm:pt-24">
@@ -15,7 +17,10 @@ const Overview = () => {
         Kenya.
       </p>
       <div className="flex flex-col justify-center items-center">
-        <button className="bg-purple-400 hover:bg-[#ECC488] text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent sm:w-36 sm:h-12 rounded">
+        <button
+          className="bg-purple-400 hover:bg-[#ECC488] text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent sm:w-36 sm:h-12 rounded"
+          onClick={() => navigate("/about")}
+        >
           View More
         </button>
       </div>

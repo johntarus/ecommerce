@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import banner from "../../assets/images/banner.png";
 
 function Hero() {
+  const navigate = useNavigate();
   const headerAnimate = {
     hidden: {
       opacity: 0,
@@ -93,6 +95,7 @@ function Hero() {
               variants={buttonVariants}
               initial="hidden"
               animate="visible"
+              onClick={() => navigate("/products")}
             >
               Shop now
             </motion.button>
