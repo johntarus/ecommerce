@@ -10,6 +10,11 @@ import jeans from "../../assets/images/jeans.jpg";
 import khakishirt from "../../assets/images/khaki-shirt.jpg";
 import navykhaki from "../../assets/images/navy-khaki.jpg";
 import curvedress from "../../assets/images/fit-dress.jpg";
+import navytshirt from "../../assets/images/navy-tshirt.jpg";
+import official from "../../assets/images/official.jpg";
+import ragged from "../../assets/images/ragged.jpg";
+import winterjackets from "../../assets/images/winter-jacks.jpg";
+import whiteshirt from "../../assets/images/white-shirt.jpg";
 
 export const products = [
   {
@@ -110,10 +115,42 @@ export const products = [
   },
   {
     id: 13,
-    name: "Bomba Jacket",
-    price: "Ksh. 1500",
+    name: "Official Trouser",
+    price: "Ksh. 1250",
     description:
-      "We provide solid color jackets with 100% cotton combined 30s best quality for solid color for quality misty materials",
-    image: bomba,
+      "We provide Official Trousers best quality for solid color for quality misty materials",
+    image: official,
+  },
+  {
+    id: 14,
+    name: "Navy Tshirt",
+    price: "Ksh. 650",
+    description:
+      "We provide T-shirts best quality for solid color for quality misty materials",
+    image: navytshirt,
+  },
+  {
+    id: 15,
+    name: "Ragged Trouser",
+    price: "Ksh. 2000",
+    description:
+      "We provide ragged trousers best quality for solid color for quality misty materials",
+    image: ragged,
+  },
+  {
+    id: 16,
+    name: "Winter Jackets",
+    price: "Ksh. 2200",
+    description:
+      "We provide winter jackets with 100% cotton combined 30s best quality for solid color for quality misty materials",
+    image: winterjackets,
+  },
+  {
+    id: 17,
+    name: "White Shirt",
+    price: "Ksh. 1400",
+    description:
+      "We provide white shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
+    image: whiteshirt,
   },
 ];
