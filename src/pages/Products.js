@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
-import { products } from "../components/helpers/data";
+// import { products } from "../components/helpers/data";
+import { ProductsContext } from "../ProductsContext";
 
 const Products = () => {
+  const [products, setProducts] = useContext(ProductsContext);
   const productAnimate = {
     hidden: {
       opacity: 0,
