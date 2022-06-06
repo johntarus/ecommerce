@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 // import { products } from "../components/helpers/data";
 import { ProductsContext } from "../ProductsContext";
