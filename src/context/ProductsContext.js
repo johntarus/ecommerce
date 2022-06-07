@@ -22,7 +22,7 @@ import whitesneakers from "../assets/images/white-sneaker.jpg";
 
 export const ProductsContext = createContext();
 export const ProductsProvider = ({ children }) => {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: 1,
       name: "Black Dress",
@@ -185,7 +185,7 @@ export const ProductsProvider = ({ children }) => {
     },
   ]);
   return (
-    <ProductsContext.Provider value={[products, setProducts]}>
+    <ProductsContext.Provider value={[products]}>
       {children}
     </ProductsContext.Provider>
   );
