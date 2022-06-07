@@ -28,15 +28,17 @@ const Products = () => {
     >
       {products.map((product) => {
         return (
-          <div key={product.id}>
+          <div
+            key={product.id}
+            className="mb-4 cursor-pointer rounded-md hover:opacity-75 hover:scale-105"
+          >
             <img
-              className="h-60 w-60 sm:w-full sm:px-8 cursor-pointer rounded-md hover:opacity-75 hover:scale-105"
+              className="h-60 w-60 sm:w-full sm:px-8 "
               src={product.image}
               alt={product.name}
             />
-            <h1 className="pt-2">{product.name}</h1>
-            <p className="text-[#ED4833] mb-2">{product.price}</p>
-            {/* <p>{product.description}</p> */}
+            <h1>{product.name}</h1>
+            <p className="text-[#ED4833]">{product.price}</p>
           </div>
         );
       })}
