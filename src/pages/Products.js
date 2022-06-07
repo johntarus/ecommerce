@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 // import { products } from "../components/helpers/data";
-import { ProductsContext } from "../ProductsContext";
+import { ProductsContext } from "../context/ProductsContext";
 
 const Products = () => {
   const [products, setProducts] = useContext(ProductsContext);

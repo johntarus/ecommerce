@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 // import product from "../../assets/images/product.jpg";
-import { ProductsContext } from "../../ProductsContext";
+import { ProductsContext } from "../../context/ProductsContext";
 
 const Featured = () => {
   const [products, setProducts] = useContext(ProductsContext);
