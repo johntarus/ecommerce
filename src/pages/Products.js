@@ -21,7 +21,7 @@ const Products = () => {
   };
   return (
     <motion.div
-      className="grid grid-cols-4 gap-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-12 px-20 sm:px-8 text-center"
+      className="grid grid-cols-4 gap-x-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-12 px-20 sm:px-8 text-center"
       variants={productAnimate}
       initial="hidden"
       animate="visible"
