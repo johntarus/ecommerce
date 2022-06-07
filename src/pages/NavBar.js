@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../index.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
+  const navigate = useNavigate();
   return (
     <>
       <nav className="navbar">
@@ -55,6 +57,7 @@ function NavBar() {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                onClick={() => navigate("/checkout")}
               >
                 <path
                   strokeLinecap="round"

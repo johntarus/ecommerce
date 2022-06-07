@@ -21,7 +21,7 @@ import Tshirt from "../assets/images/product.jpg";
 import whitesneakers from "../assets/images/white-sneaker.jpg";
 
 export const ProductsContext = createContext();
-export const ProductsProvider = (props) => {
+export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([
     {
       id: 1,
@@ -186,7 +186,7 @@ export const ProductsProvider = (props) => {
   ]);
   return (
     <ProductsContext.Provider value={[products, setProducts]}>
-      {props.children}
+      {children}
     </ProductsContext.Provider>
   );
 };
