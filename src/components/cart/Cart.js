@@ -6,7 +6,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <div>
-      <h2>Cart Items</h2>
+      <h2 className="text-center font-bold text-3xl mb-12">Cart Items</h2>
       {cart.items === 0 ? (
         <div>
           <p>Your Cart is currently Empty</p>
@@ -30,8 +30,8 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <div>
-          <div>
+        <div className="px-20">
+          <div className="flex text-xl font-semibold space-x-8">
             <h3>Product</h3>
             <h3>Price</h3>
             <h3>Quantity</h3>
@@ -44,7 +44,7 @@ const Cart = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="h-20 w-20"
+                    className="h-20 w-20 rounded-md"
                   />
                   <div>
                     <h3>{product.name}</h3>
