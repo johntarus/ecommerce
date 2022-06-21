@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-// import product from "../../assets/images/product.jpg";
 import { ProductsContext } from "../../context/ProductsContext";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../features/cartSlice";
 
-const Featured = () => {
-  const [products, setProducts] = useContext(ProductsContext);
+const Featured = ({ product }) => {
+  const [products] = useContext(ProductsContext);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   return (
     <div className="bg-[#F5F5F5] px-20 sm:px-6 mb-8 pb-12">
       <h1 className="text-center font-bold text-4xl pt-24 pb-12 mb-6">
@@ -20,6 +23,12 @@ const Featured = () => {
                 src={product.image}
                 alt={product.name}
               />
+              <button
+                className="bg-red-600"
+                onClick={() => dispatch(addToCart(product))}
+              >
+                add to cart
+              </button>
               <h1 className="pt-2">{product.name}</h1>
               <p className="text-[#ED4833] mb-2">{product.price}</p>
               {/* <p>{product.description}</p> */}
