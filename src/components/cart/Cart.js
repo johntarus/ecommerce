@@ -17,7 +17,7 @@ const Cart = () => {
     );
   };
   return (
-    <div>
+    <div className="px-20">
       <h2 className="text-center font-bold text-3xl mb-12">Cart Items</h2>
       {cart.items < 1 ? (
         <div>
@@ -43,7 +43,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <div className="px-20">
+        <div className="">
           <div className="grid grid-cols-4 font-semibold text-xl">
             <h3>Product</h3>
             <h3>Price</h3>
@@ -94,35 +94,39 @@ const Cart = () => {
           </div>
         </div>
       )}
-      <div className="block justify-end">
-        <p>
-          Grand Total{" "}
-          <span className="font-semibold"> Ksh. {totalCartPrice()}</span>
-        </p>
-        <button className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded">
-          Clear Cart
-        </button>
-        <p>Taxes and shipping calculated at checkout</p>
-        <button className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded">
-          Checkout
-        </button>
-        <Link to="/products" className="flex">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
-            />
-          </svg>
-          <span>Start Shopping</span>
-        </Link>
+      <div className="my-10">
+        <div>
+          <button className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded">
+            Clear Cart
+          </button>
+        </div>
+        <div>
+          <p>
+            Grand Total{" "}
+            <span className="font-semibold"> Ksh. {totalCartPrice()}</span>
+          </p>
+          <p>Taxes and shipping calculated at checkout</p>
+          <button className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded">
+            Checkout
+          </button>
+          <Link to="/products" className="flex">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+              />
+            </svg>
+            <span>Start Shopping</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
