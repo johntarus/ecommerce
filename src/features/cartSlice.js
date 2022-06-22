@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
 
 const initialState = {
-  items: [],
+  items: localStorage.getItem("items")
+    ? JSON.parse(localStorage.getItem("items"))
+    : [],
   totalQuantity: 0,
   totalPrice: 0,
 };
@@ -31,19 +33,49 @@ const cartSlice = createSlice({
     incrementQuantity: (state, action) => {
       const item = state.items.find((item) => item.id === action.payload);
       item.quantity++;
+      toast.info(`increased ${item.name} in cart`, {
+        position: "bottom-left",
+      });
     },
     decrementQuantity: (state, action) => {
       const item = state.items.find((item) => item.id === action.payload);
       if (item.quantity === 1) {
-        const index = state.findIndex((item) => item.id === action.payload);
-        state.splice(index, 1);
+        const index = state.items.findIndex(
+          (item) => item.id === action.payload
+        );
+        state.items.splice(index, 1);
       } else {
         item.quantity--;
+        toast.warning(`decreased ${item.name} from cart`, {
+          position: "bottom-left",
+        });
       }
     },
+    // getTotals(state, action) {
+    //   let { total, quantity } = state.items.reduce(
+    //     (cartTotal, Item) => {
+    //       const { price, cartQuantity } = Item;
+    //       const itemTotal = cartQuantity * price;
+    //       cartTotal.total += itemTotal;
+    //       cartTotal.quantity += cartQuantity;
+    //       return cartTotal;
+    //     },
+    //     {
+    //       total: 0,
+    //       quantity: 0,
+    //     }
+    //   );
+    //   total = parseFloat(total.toFixed(2));
+    //   state.totalQuantity = quantity;
+    //   state.totalPrice = total;
+    // },
     removeFromCart: (state, action) => {
-      const index = state.findIndex((item) => item.id === action.payload);
-      state.splice(index, 1);
+      const item = state.items.find((item) => item.id === action.payload);
+      const index = state.items.findIndex((item) => item.id === action.payload);
+      state.items.splice(index, 1);
+      toast.warning(`removed ${item.name} from cart`, {
+        position: "bottom-left",
+      });
     },
   },
 });
