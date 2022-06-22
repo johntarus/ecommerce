@@ -51,24 +51,7 @@ const cartSlice = createSlice({
         });
       }
     },
-    // getTotals(state, action) {
-    //   let { total, quantity } = state.items.reduce(
-    //     (cartTotal, Item) => {
-    //       const { price, cartQuantity } = Item;
-    //       const itemTotal = cartQuantity * price;
-    //       cartTotal.total += itemTotal;
-    //       cartTotal.quantity += cartQuantity;
-    //       return cartTotal;
-    //     },
-    //     {
-    //       total: 0,
-    //       quantity: 0,
-    //     }
-    //   );
-    //   total = parseFloat(total.toFixed(2));
-    //   state.totalQuantity = quantity;
-    //   state.totalPrice = total;
-    // },
+
     removeFromCart: (state, action) => {
       const item = state.items.find((item) => item.id === action.payload);
       const index = state.items.findIndex((item) => item.id === action.payload);
