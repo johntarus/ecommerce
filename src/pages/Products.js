@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { ProductsContext } from "../context/ProductsContext";
 
-
 const Products = () => {
   const [products] = useContext(ProductsContext);
   const productAnimate = {
@@ -39,7 +38,7 @@ const Products = () => {
             />
             <button>add to cart</button>
             <h1>{product.name}</h1>
-            <p className="text-[#ED4833]">{product.price}</p>
+            <p className="text-[#ED4833]">Ksh. {product.price}</p>
           </div>
         );
       })}

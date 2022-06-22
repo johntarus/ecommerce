@@ -30,7 +30,7 @@ const Featured = ({ product }) => {
                 add to cart
               </button>
               <h1 className="pt-2">{product.name}</h1>
-              <p className="text-[#ED4833] mb-2">{product.price}</p>
+              <p className="text-[#ED4833] mb-2">Ksh. {product.price}</p>
               {/* <p>{product.description}</p> */}
             </div>
           );

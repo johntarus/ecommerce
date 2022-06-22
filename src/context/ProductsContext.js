@@ -26,7 +26,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 1,
       name: "Black Dress",
-      price: "Ksh. 600",
+      price: 600,
       description:
         "Show your curves some love with our Most elegant Bodycon dresses.",
       image: blackdress,
@@ -34,7 +34,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 2,
       name: "Black Shirt",
-      price: "Ksh. 900",
+      price: 900,
       description:
         "We provide solid color t-shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: blackshirt,
@@ -42,7 +42,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 3,
       name: "Bomba Jacket",
-      price: "Ksh. 1500",
+      price: 1500,
       description:
         "We provide solid color jackets with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: bomba,
@@ -50,7 +50,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 4,
       name: "Blue T-shirt",
-      price: "Ksh. 500",
+      price: 500,
       description:
         "We provide solid color t-shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: bluesthirts,
@@ -58,7 +58,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 5,
       name: "Bodycorn",
-      price: "Ksh. 900",
+      price: 900,
       description:
         "We provide solid color bodycorn with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: bodycorn,
@@ -66,7 +66,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 6,
       name: "Checked Shirts",
-      price: "Ksh. 1300",
+      price: 1300,
       description:
         "We provide solid color shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: checkedshirt,
@@ -74,7 +74,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 7,
       name: "Combo T-shirt & Short",
-      price: "Ksh. 1800",
+      price: 1800,
       description:
         "We provide combos with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: combo,
@@ -82,7 +82,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 8,
       name: "Decorated Dress",
-      price: "Ksh. 799",
+      price: 799,
       description:
         "We provide dresses with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: dress,
@@ -90,7 +90,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 9,
       name: "Jeans",
-      price: "Ksh. 1900",
+      price: 1900,
       description:
         "We provide cool jeans with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: jeans,
@@ -98,7 +98,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 10,
       name: "Khaki Shirts",
-      price: "Ksh. 1100",
+      price: 1100,
       description:
         "We provide khaki shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: khakishirt,
@@ -106,7 +106,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 11,
       name: "Navy Khaki",
-      price: "Ksh. 1600",
+      price: 1600,
       description:
         "We provide solid color jkhaki trousers with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: navykhaki,
@@ -114,7 +114,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 12,
       name: "Curved Dress",
-      price: "Ksh. 1450",
+      price: 1450,
       description:
         "We provide solid color Dresses with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: curvedress,
@@ -122,7 +122,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 13,
       name: "Official Trouser",
-      price: "Ksh. 1250",
+      price: 1250,
       description:
         "We provide Official Trousers best quality for solid color for quality misty materials",
       image: official,
@@ -130,7 +130,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 14,
       name: "Navy Tshirt",
-      price: "Ksh. 650",
+      price: 650,
       description:
         "We provide T-shirts best quality for solid color for quality misty materials",
       image: navytshirt,
@@ -138,7 +138,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 15,
       name: "Ragged Trouser",
-      price: "Ksh. 2000",
+      price: 2000,
       description:
         "We provide ragged trousers best quality for solid color for quality misty materials",
       image: ragged,
@@ -146,7 +146,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 16,
       name: "Winter Jackets",
-      price: "Ksh. 2200",
+      price: 2200,
       description:
         "We provide winter jackets with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: winterjackets,
@@ -154,7 +154,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 17,
       name: "White Shirt",
-      price: "Ksh. 1400",
+      price: 1400,
       description:
         "We provide white shirts with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: whiteshirt,
@@ -162,7 +162,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 18,
       name: "Sneakers",
-      price: "Ksh. 2500",
+      price: 2500,
       description:
         "We provide the best quality sneakers for solid color for quality misty materials",
       image: sneakers,
@@ -170,7 +170,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 19,
       name: "Green Tshirt",
-      price: "Ksh. 550",
+      price: 550,
       description:
         "We supply the best quality for solid color tshirts for quality misty materials",
       image: Tshirt,
@@ -178,7 +178,7 @@ export const ProductsProvider = ({ children }) => {
     {
       id: 20,
       name: "White Sneakers",
-      price: "Ksh. 3000",
+      price: 3000,
       description:
         "We provide solid color sneakers with 100% cotton combined 30s best quality for solid color for quality misty materials",
       image: whitesneakers,

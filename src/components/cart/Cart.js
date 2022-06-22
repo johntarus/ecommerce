@@ -10,6 +10,12 @@ import {
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  const totalCartPrice = () => {
+    return cart.items.reduce(
+      (accumulator, product) => accumulator + product.quantity * product.price,
+      0
+    );
+  };
   return (
     <div>
       <h2 className="text-center font-bold text-3xl mb-12">Cart Items</h2>
@@ -38,16 +44,17 @@ const Cart = () => {
         </div>
       ) : (
         <div className="px-20">
-          <div className="flex text-xl font-semibold space-x-20">
+          <div className="grid grid-cols-4 font-semibold text-xl">
             <h3>Product</h3>
             <h3>Price</h3>
             <h3>Quantity</h3>
             <h3>Total</h3>
           </div>
-          <div>
+          <hr />
+          <div className="mt-6">
             {cart.items.map((product) => (
-              <div key={product.id}>
-                <div>
+              <div key={product.id} className="grid grid-cols-4 ">
+                <div className="flex">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -62,9 +69,10 @@ const Cart = () => {
                     </button>
                   </div>
                 </div>
-                <div>{product.price}</div>
-                <div>
+                <div className="">{product.price}</div>
+                <div className="flex items-center line-height-inherit">
                   <button
+                    className=""
                     onClick={() => dispatch(decrementQuantity(product.id))}
                   >
                     -
@@ -76,12 +84,13 @@ const Cart = () => {
                     +
                   </button>
                 </div>
-                <div>{product.quantity * product.rice}</div>
+                <div>{product.price * product.quantity}</div>
               </div>
             ))}
           </div>
         </div>
       )}
+      <div>Grand Total ${totalCartPrice()}</div>
     </div>
   );
 };
