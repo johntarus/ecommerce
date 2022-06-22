@@ -60,6 +60,13 @@ const cartSlice = createSlice({
         position: "bottom-left",
       });
     },
+    clearCart: (state, action) => {
+      state.items = [];
+      toast.warning(`Cart Cleared`, {
+        position: "bottom-left",
+      });
+      localStorage.setItem("items", JSON.stringify(state.items));
+    },
   },
 });
 
@@ -70,4 +77,5 @@ export const {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
+  clearCart,
 } = cartSlice.actions;
