@@ -18,17 +18,34 @@ const Featured = ({ product }) => {
         {products.slice(0, 4).map((product) => {
           return (
             <div key={product.id} className="grid">
-              <img
-                className="h-60 w-60 sm:w-full sm:px-8 cursor-pointer rounded-md hover:opacity-75 hover:scale-105"
-                src={product.image}
-                alt={product.name}
-              />
-              <button
+              <div className="relative">
+                <img
+                  className="h-60 w-60 sm:w-full sm:px-8 rounded-md hover:opacity-75 hover:scale-105"
+                  src={product.image}
+                  alt={product.name}
+                />
+                <svg
+                  className="w-8 h-8 z-10 absolute bottom-0 right-0 cursor-pointer fill-[#ED4833] hover:scale-125 hover:skew-y-12"
+                  stroke="none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  onClick={() => dispatch(addToCart(product))}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+
+              {/* <button
                 className="bg-red-600"
                 onClick={() => dispatch(addToCart(product))}
               >
                 add to cart
-              </button>
+              </button> */}
               <h1 className="pt-2">{product.name}</h1>
               <p className="text-[#ED4833] mb-2">Ksh. {product.price}</p>
               {/* <p>{product.description}</p> */}

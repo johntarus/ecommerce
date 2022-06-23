@@ -31,12 +31,14 @@ const Products = () => {
             key={product.id}
             className="mb-4 cursor-pointer rounded-md hover:opacity-75 hover:scale-105"
           >
-            <img
-              className="h-60 w-60 sm:w-full sm:px-8 "
-              src={product.image}
-              alt={product.name}
-            />
-            <button>add to cart</button>
+            <div>
+              <img
+                className="h-60 w-60 sm:w-full sm:px-8 "
+                src={product.image}
+                alt={product.name}
+              />
+            </div>
+            {/* <button>add to cart</button> */}
             <h1>{product.name}</h1>
             <p className="text-[#ED4833]">Ksh. {product.price}</p>
           </div>
