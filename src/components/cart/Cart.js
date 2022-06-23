@@ -1,22 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
+  getCartTotal,
   clearCart,
 } from "../../features/cartSlice";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  const totalCartPrice = () => {
-    return cart.items.reduce(
-      (accumulator, product) => accumulator + product.quantity * product.price,
-      0
-    );
-  };
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [dispatch, cart]);
+
   return (
     <div className="px-20 md:px-6 sm:px-2">
       <h2 className="text-center font-semibold text-2xl mb-12">Cart Items</h2>
@@ -112,7 +111,7 @@ const Cart = () => {
             <div className="mr-40 sm:mr-6 w-[200px]">
               <p className="mb-4">
                 Grand Total{" "}
-                <span className="font-semibold"> $ {totalCartPrice()}</span>
+                <span className="font-semibold"> $ {cart.totalAmount}</span>
               </p>
               <p className="text-sm mb-3">
                 Taxes & shipping calculated at checkout
@@ -135,7 +134,7 @@ const Cart = () => {
                     d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
                   />
                 </svg>
-                <span>Start Shopping</span>
+                <span>Continue Shopping</span>
               </Link>
             </div>
           </div>
