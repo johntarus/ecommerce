@@ -1,12 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProductsContext } from "../../context/ProductsContext";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../features/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, getCartTotal } from "../../features/cartSlice";
 
 const Featured = ({ product }) => {
   const [products] = useContext(ProductsContext);
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart, dispatch]);
 
   return (
     <div className="bg-[#F5F5F5] px-20 sm:px-6 mb-8 pb-12">

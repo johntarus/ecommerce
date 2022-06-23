@@ -14,7 +14,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCartTotal());
-  }, [dispatch, cart]);
+  }, [cart, dispatch]);
 
   return (
     <div className="px-20 md:px-6 sm:px-2">

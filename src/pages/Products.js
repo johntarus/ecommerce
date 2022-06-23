@@ -1,12 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ProductsContext } from "../context/ProductsContext";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../features/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, getCartTotal } from "../features/cartSlice";
 
 const Products = () => {
   const [products] = useContext(ProductsContext);
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart, dispatch]);
   const productAnimate = {
     hidden: {
       opacity: 0,
