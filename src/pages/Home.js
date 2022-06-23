@@ -45,10 +45,10 @@ const Home = () => {
         <Benefits />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <Overview />
+        <Featured />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <Featured />
+        <Overview />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <History />
