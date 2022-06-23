@@ -68,7 +68,7 @@ const Cart = () => {
                     alt={product.name}
                     className="h-20 w-20 sm:h-15 sm:w-15 rounded-md"
                   />
-                  <div>
+                  <div className="2xl:ml-4 sm:ml-2">
                     <h3 className="font-semibold">{product.name}</h3>
                     <button
                       className="bg-transparent mt-2 text-semibold py-1 px-2 sm:px-1 sm:py-1 border border-[#9333EA] rounded"
@@ -78,7 +78,7 @@ const Cart = () => {
                     </button>
                   </div>
                 </div>
-                <div className="sm:ml-12">$ {product.price}</div>
+                <div className="sm:ml-16">$ {product.price}</div>
                 <div className="flex items-center -mt-14 sm:ml-8">
                   <button
                     className="bg-transparent mt-2 text-semibold py-1 px-2 border border-[#9333EA] rounded"
