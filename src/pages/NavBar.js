@@ -71,12 +71,9 @@ function NavBar() {
                   d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                 ></path>
               </svg>
-              <div className="bg-red-500 w-5 h-5 rounded-full flex justify-center items-center absolute top-2 -right-2">
+              <div className="bg-red-500 w-5 h-5 rounded-full flex justify-center items-center absolute top-2 -right-2 sm:top-4 sm:right-0 sm:mr-14">
                 <p className="text-xs text-white">{totalQuantity}</p>
               </div>
-              {/* <p className="flex items-center w-4 h-4 bg-[#ED4833] rounded-full absolute bottom-0 right-0">
-                0
-              </p> */}
             </div>
             <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white py-1 px-4 mr-12 ml-12 mt-2 border  hover:border-transparent rounded lg:hidden md:hidden sm:hidden">
               Login
