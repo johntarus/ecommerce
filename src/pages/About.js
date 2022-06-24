@@ -22,14 +22,14 @@ const About = () => {
   return (
     <div>
       <motion.div
-        className="grid grid-cols-2 gap-8 px-28 sm:grid-cols-1 sm:px-8 sm:gap-0"
+        className="grid grid-cols-2 gap-8 px-28 sm:grid-cols-1 sm:px-8 sm:gap-0 xs:mb-8 xs:text-center"
         variants={textAnimate}
         initial="hidden"
         animate="visible"
       >
         <img className="object-cover" src={about} alt="about" />
 
-        <p className="mt-16 text-lg sm:mt-8">
+        <p className="mt-16 text-lg sm:mt-8 xs:mt-0 xs:text-sm">
           Synonymous with the youth movement and counterculture fashions of the
           "Swinging Sixties," the boutique radically changed ways of making,
           marketing, displaying, and buying clothing. Names and places such as

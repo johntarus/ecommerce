@@ -103,7 +103,7 @@ const Cart = () => {
             <div className="flex-start">
               <button
                 onClick={() => dispatch(clearCart())}
-                className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded"
+                className="bg-transparent mt-2 text-semibold py-2 px-4 border border-[#9333EA] rounded hover:bg-[#9333EA] hover:text-white"
               >
                 Clear Cart
               </button>

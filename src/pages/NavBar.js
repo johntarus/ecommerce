@@ -19,9 +19,9 @@ function NavBar() {
         <div className="nav-container">
           <NavLink
             to="/"
-            className="nav-logo sm:text-2xl xs:text-lg w-8 mr-6 sm:mt-4"
+            className="nav-logo sm:text-2xl xs:text-lg w-8 xl:w-28 mr-6 sm:mt-4"
           >
-            <i className="fa fa-cart-plus  xs:text-lg" aria-hidden="true"></i>
+            <i className="fa fa-cart-plus xs:text-lg" aria-hidden="true"></i>
             FASH<span className="text-purple-600">SHOP</span>
           </NavLink>
 
@@ -74,7 +74,7 @@ function NavBar() {
                   d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                 ></path>
               </svg>
-              <div className="bg-red-500 w-5 h-5 rounded-full flex justify-center items-center absolute top-2 -right-2 sm:top-4 sm:right-0 sm:mr-14">
+              <div className="bg-red-500 w-5 h-5 rounded-full flex justify-center items-center absolute top-2 -right-2 lg:right-28 lg:top-4 sm:top-4 sm:right-0 sm:mr-14">
                 <p className="text-xs text-white">{totalQuantity}</p>
               </div>
             </div>
