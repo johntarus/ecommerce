@@ -3,7 +3,7 @@ import React from "react";
 const Newsletter = () => {
   return (
     <div className="px-36 sm:px-6 mt-24 mb-24">
-      <h1 className="font-bold text-3xl pb-8 sm:text-l">
+      <h1 className="font-bold text-3xl xs:text-lg pb-8 sm:text-l">
         Join our Newsletter And Get 20% OFF
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-1">

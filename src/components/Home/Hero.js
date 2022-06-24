@@ -65,9 +65,9 @@ function Hero() {
   return (
     <div>
       <div className="grid grid-cols-2 divide-x justify-items-center sm:grid-cols-1 md:grid-cols-1 mb-20">
-        <div className="mt-28 px-12 sm:px-8">
+        <div className="mt-28 xs:mt-16 px-12 sm:px-8">
           <motion.h2
-            className=" font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833] mb-10 sm:text-2xl md:text-2xl lg:text-3xl"
+            className=" font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-[#ed4833] mb-10 sm:text-2xl md:text-2xl lg:text-3xl xs:text-lg"
             variants={headerAnimate}
             initial="hidden"
             animate="visible"
@@ -75,7 +75,7 @@ function Hero() {
             FASHION DEALS <br /> YOU LOVE
           </motion.h2>
           <motion.p
-            className="pt-4 text-xl mb-4"
+            className="pt-4 text-xl xs:text-sm mb-4"
             variants={textAnimate}
             initial="hidden"
             animate="visible"

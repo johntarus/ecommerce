@@ -17,8 +17,11 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink to="/" className="nav-logo sm:text-2xl w-8 mr-6 sm:mt-4">
-            <i className="fa fa-cart-plus" aria-hidden="true"></i>
+          <NavLink
+            to="/"
+            className="nav-logo sm:text-2xl xs:text-lg w-8 mr-6 sm:mt-4"
+          >
+            <i className="fa fa-cart-plus  xs:text-lg" aria-hidden="true"></i>
             FASH<span className="text-purple-600">SHOP</span>
           </NavLink>
 
@@ -57,7 +60,7 @@ function NavBar() {
           <div className="flex">
             <div className="relative">
               <svg
-                className="w-8 h-8 sm:w-10  mt-2 cursor-pointer lg:mt-6 lg:mr-32 md:mt-6 md:mr-32 sm:h-10 sm:mt-4 sm:mr-16 sm:ml-10"
+                className="w-8 h-8 sm:w-10  mt-2 xs:mt0 cursor-pointer lg:mt-6 lg:mr-32 md:mt-6 md:mr-32 sm:mt-6 sm:mr-16 sm:ml-10 xs:ml-0 xs:text-sm"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

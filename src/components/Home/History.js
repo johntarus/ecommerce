@@ -7,8 +7,8 @@ const History = () => {
         <div className="font-semibold text-2xl md:text-xl">
           <h1>Explore Our Products to Discover Crazy Deals</h1>
         </div>
-        <div className="col-span-2 text-xl text-[#525557]">
-          <p>
+        <div className="col-span-2 text-xl xs:text-lg text-[#525557]">
+          <p className="sm:text-lg xs:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.
@@ -21,8 +21,8 @@ const History = () => {
             className="fa fa-compass fa-3x mb-4 product-fa"
             aria-hidden="true"
           ></i>
-          <h1 className="font-bold text-3xl pb-4">Mission</h1>
-          <p>
+          <h1 className="font-bold text-3xl xs:text-lg pb-4">Mission</h1>
+          <p className="sm:text-lg xs:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.
@@ -31,8 +31,8 @@ const History = () => {
 
         <div className="bg-[#886F6F] w-84 p-8 rounded-md">
           <i className="fa fa-eye fa-3x mb-6 product-fa" aria-hidden="true"></i>
-          <h1 className="font-bold text-3xl pb-4">Vission</h1>
-          <p>
+          <h1 className="font-bold text-3xl xs:text-lg pb-4">Vission</h1>
+          <p className="sm:text-lg xs:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.
@@ -43,8 +43,8 @@ const History = () => {
             className="fa fa-history fa-3x mb-6 product-fa"
             aria-hidden="true"
           ></i>
-          <h1 className="font-bold text-3xl pb-4">History</h1>
-          <p>
+          <h1 className="font-bold text-3xl xs:text-lg pb-4">History</h1>
+          <p className="sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.
