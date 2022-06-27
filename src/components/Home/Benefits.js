@@ -7,7 +7,7 @@ const Benefits = () => {
       <div className="m-6 w-full-width">
         <i className="fa fa-truck fa-2x mb-2" aria-hidden="true"></i>
         <h1 className="font-semibold">FREE SHIPPING</h1>
-        <p>For all orders above Ksh. 5000</p>
+        <p>For all orders above $500</p>
       </div>
       <div className="m-6 w-full-width">
         <i className="fa fa-clock-o fa-2x fa-spin mb-2" aria-hidden="true"></i>
