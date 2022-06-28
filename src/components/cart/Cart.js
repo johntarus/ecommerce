@@ -116,9 +116,11 @@ const Cart = () => {
               <p className="text-sm mb-3">
                 Taxes & shipping calculated at checkout
               </p>
+              <Link to="/sign-in">
               <button className="bg-transparent hover:bg-[#9333EA] hover:text-white mt-2 text-semibold py-2 px-16 border border-[#9333EA] my-4 rounded">
                 Checkout
               </button>
+              </Link>
               <Link to="/products" className="flex hover:text-[#9333EA]">
                 <svg
                   className="w-6 h-6"

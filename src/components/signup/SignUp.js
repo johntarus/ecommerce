@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 const SignUp = () => {
@@ -86,7 +87,7 @@ const SignUp = () => {
             ref={passwordRef}
           ></input>
         </div>
-        <div className="form-group mb-4">
+        <div className="form-group mb-6">
           <label
             htmlFor="Password"
             className="form-label inline-block mb-2 text-gray-700"
@@ -114,14 +115,14 @@ const SignUp = () => {
             ref={confirmPasswordRef}
           ></input>
         </div>
-        <div className="flex justify-center items-center mb-4">
+        {/* <div className="flex justify-center items-center mb-4">
           <a
             href="#!"
             className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
           >
             Forgot password?
           </a>
-        </div>
+        </div> */}
         <button
           type="submit"
           disabled={loading}
@@ -147,13 +148,13 @@ const SignUp = () => {
           Sign Up
         </button>
         <p className="text-gray-800 mt-6 text-center">
-          Already have an account?{" "}
-          <a
-            href="#!"
+          Already have an account? {""}
+          <Link
+            to="/sign-in"
             className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
           >
-            Sign in
-          </a>
+            Sign In
+          </Link>
         </p>
       </form>
     </div>
