@@ -36,7 +36,7 @@ const Products = () => {
         return (
           <div
             key={product.id}
-            className="mb-4 cursor-pointer rounded-md hover:opacity-75 hover:scale-105"
+            className="mb-4 cursor-pointer rounded-md hover:opacity-75 hover:scale-110 transition duration-300 ease-in-out"
           >
             <div className="relative">
               <img

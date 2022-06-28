@@ -24,7 +24,7 @@ const Featured = ({ product }) => {
             <div key={product.id} className="grid">
               <div className="relative">
                 <img
-                  className="h-60 w-60 sm:w-full sm:px-8 rounded-md hover:opacity-75 hover:scale-105"
+                  className="h-60 w-60 sm:w-full sm:px-8 rounded-md hover:opacity-75 hover:scale-110 transition duration-300 ease-in-out"
                   src={product.image}
                   alt={product.name}
                 />

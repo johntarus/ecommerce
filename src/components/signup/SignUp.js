@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const SignUp = () => {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const confirmPasswordRef = useRef();
   return (
-    <div className="block justify-items-center align-items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
+    <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm m-auto">
+      <h2 className="text-xl font-semibold mb-6 text-center">Sign Up</h2>
       <form>
         <div className="form-group mb-6">
           <label
-            for="email"
+            htmlFor="email"
             className="form-label inline-block mb-2 text-gray-700"
           >
             Email address
           </label>
           <input
             type="email"
-            className="form-control
+            className="
         block
         w-full
         px-3
@@ -28,14 +32,14 @@ const SignUp = () => {
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-[#9333EA] focus:outline-none"
-            id="exampleInputEmail2"
-            aria-describedby="emailHelp"
             placeholder="Enter email"
+            required
+            ref={emailRef}
           ></input>
         </div>
         <div className="form-group mb-4">
           <label
-            for="exampleInputPassword2"
+            htmlFor="Password"
             className="form-label inline-block mb-2 text-gray-700"
           >
             Password
@@ -56,8 +60,37 @@ const SignUp = () => {
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-[#9333EA] focus:outline-none"
-            id="exampleInputPassword2"
             placeholder="Password"
+            required
+            ref={passwordRef}
+          ></input>
+        </div>
+        <div className="form-group mb-4">
+          <label
+            htmlFor="Password"
+            className="form-label inline-block mb-2 text-gray-700"
+          >
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            className="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-[#9333EA] focus:outline-none"
+            placeholder="Password"
+            required
+            ref={confirmPasswordRef}
           ></input>
         </div>
         <div className="flex justify-center items-center mb-4">
@@ -89,15 +122,15 @@ const SignUp = () => {
       duration-150
       ease-in-out"
         >
-          Sign in
+          Sign Up
         </button>
         <p className="text-gray-800 mt-6 text-center">
-          Dont have an account?{" "}
+          Already have an account?{" "}
           <a
             href="#!"
             className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
           >
-            Register
+            Sign in
           </a>
         </p>
       </form>
