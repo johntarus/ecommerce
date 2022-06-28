@@ -26,7 +26,7 @@ const SignIn = () => {
   }
 
   return (
-    <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm m-auto">
+    <div className="block p-6 mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign In</h2>
       {error && alert(error)}
       <form onSubmit={handleSubmit}>
