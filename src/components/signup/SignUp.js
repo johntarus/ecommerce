@@ -5,7 +5,7 @@ const SignUp = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
-  const { signup, currentUser } = useAuth();
+  const { signup } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
 
@@ -27,7 +27,6 @@ const SignUp = () => {
   return (
     <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign Up</h2>
-      {currentUser && currentUser.email}
       {error && alert(error)}
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-6">
