@@ -1,13 +1,35 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { useAuth } from "../../context/AuthContext";
 
 const SignUp = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
+  const { signup, currentUser } = useAuth();
+  const [error, setError] = useState();
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    if (passwordRef.current.value !== confirmPasswordRef.current.value) {
+      return setError("Passwords do not match");
+    }
+    try {
+      setError("");
+      setLoading(true);
+      signup(emailRef.current.value, passwordRef.current.value);
+    } catch (error) {
+      setError("Failled to create an account");
+    }
+    setLoading(false);
+  }
+
   return (
     <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign Up</h2>
-      <form>
+      {currentUser && currentUser.email}
+      {error && alert(error)}
+      <form onSubmit={handleSubmit}>
         <div className="form-group mb-6">
           <label
             htmlFor="email"
@@ -103,6 +125,7 @@ const SignUp = () => {
         </div>
         <button
           type="submit"
+          disabled={loading}
           className="
       w-full
       px-6

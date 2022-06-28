@@ -8,25 +8,28 @@ import Cart from "./components/cart/Cart";
 import { ProductsProvider } from "./context/ProductsContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <ProductsProvider>
-      <>
-        <Router>
-          <ToastContainer />
-          <NavBar />
-          <div>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/cart" element={<Cart />} />
-            </Routes>
-          </div>
-        </Router>
-      </>
-    </ProductsProvider>
+    <AuthProvider>
+      <ProductsProvider>
+        <>
+          <Router>
+            <ToastContainer />
+            <NavBar />
+            <div>
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/cart" element={<Cart />} />
+              </Routes>
+            </div>
+          </Router>
+        </>
+      </ProductsProvider>
+    </AuthProvider>
   );
 }
 
