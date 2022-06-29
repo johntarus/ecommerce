@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-
 import "../index.css";
 
 function NavBar() {
@@ -78,9 +77,11 @@ function NavBar() {
                 <p className="text-xs text-white">{totalQuantity}</p>
               </div>
             </div>
-            <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white py-1 px-4 mr-12 ml-12 mt-2 border  hover:border-transparent rounded lg:hidden md:hidden sm:hidden">
-              Login
-            </button>
+            <Link to="/sign-in">
+              <button className="bg-gradient-to-r from-purple-600 to-[#ed4833] hover:from-[#ed4833] hover:to-purple-600  text-white py-1 px-4 mr-12 ml-12 mt-2 border  hover:border-transparent rounded lg:hidden md:hidden sm:hidden">
+                Login
+              </button>
+            </Link>
           </div>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>

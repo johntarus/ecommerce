@@ -5,22 +5,18 @@ import { useAuth } from "../../context/AuthContext";
 const SignIn = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const confirmPasswordRef = useRef();
-  const { signup } = useAuth();
+  const { signin } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
-    if (passwordRef.current.value !== confirmPasswordRef.current.value) {
-      return setError("Passwords do not match");
-    }
     try {
       setError("");
       setLoading(true);
-      signup(emailRef.current.value, passwordRef.current.value);
-    } catch (error) {
-      setError("Failled to create an account");
+      signin(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      setError("Failed to sign in");
     }
     setLoading(false);
   }
@@ -28,7 +24,7 @@ const SignIn = () => {
   return (
     <div className="block p-6 mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign In</h2>
-      {error && alert(error)}
+      {error && <p>{error}</p>}
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-6">
           <label
@@ -117,7 +113,7 @@ const SignIn = () => {
       duration-150
       ease-in-out"
         >
-          Sign Up
+          Sign In
         </button>
         <p className="text-gray-800 mt-6 text-center">
           Don't have an account? {""}
