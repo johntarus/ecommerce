@@ -19,7 +19,7 @@ const SignIn = () => {
       setError("");
       setLoading(true);
       await signin(emailRef.current.value, passwordRef.current.value);
-      navigate("/cart");
+      navigate("/successful");
     } catch (error) {
       setError(error.message);
     }

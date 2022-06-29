@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider } from "./context/AuthContext";
 import SignIn from "./components/signup/SignIn";
 import SignUp from "./components/signup/SignUp";
+import Successful from "./components/signup/Successful";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/sign-in" element={<SignIn />} />
                 <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/successful" element={<Successful />} />
               </Routes>
             </div>
           </Router>

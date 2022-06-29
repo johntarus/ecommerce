@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   incrementQuantity,
   decrementQuantity,
@@ -10,6 +11,20 @@ import {
 } from "../../features/cartSlice";
 
 const Cart = () => {
+  const pageAnimate = {
+    hidden: {
+      opacity: 0,
+      y: 25,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.3,
+      },
+    },
+  };
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -17,7 +32,12 @@ const Cart = () => {
   }, [cart, dispatch]);
 
   return (
-    <div className="px-20 md:px-6 sm:px-2">
+    <motion.div
+      className="px-20 md:px-6 sm:px-2"
+      variants={pageAnimate}
+      initial="hidden"
+      animate="visible"
+    >
       <h2 className="text-center font-semibold text-2xl mb-12">Cart Items</h2>
       {cart.items < 1 ? (
         <>
@@ -117,9 +137,9 @@ const Cart = () => {
                 Taxes & shipping calculated at checkout
               </p>
               <Link to="/sign-in">
-              <button className="bg-transparent hover:bg-[#9333EA] hover:text-white mt-2 text-semibold py-2 px-16 border border-[#9333EA] my-4 rounded">
-                Checkout
-              </button>
+                <button className="bg-transparent hover:bg-[#9333EA] hover:text-white mt-2 text-semibold py-2 px-16 border border-[#9333EA] my-4 rounded">
+                  Checkout
+                </button>
               </Link>
               <Link to="/products" className="flex hover:text-[#9333EA]">
                 <svg
@@ -143,7 +163,7 @@ const Cart = () => {
           ;
         </>
       )}
-    </div>
+    </motion.div>
   );
 };
 
