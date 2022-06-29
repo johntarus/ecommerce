@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 const SignIn = () => {
@@ -8,15 +8,20 @@ const SignIn = () => {
   const { signin } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (passwordRef.current.value.length < 6) {
+      return setError("Password must be at least 6 characters");
+    }
     try {
       setError("");
       setLoading(true);
-      signin(emailRef.current.value, passwordRef.current.value);
-    } catch {
-      setError("Failed to sign in");
+      await signin(emailRef.current.value, passwordRef.current.value);
+      navigate("/cart");
+    } catch (error) {
+      setError(error.message);
     }
     setLoading(false);
   }
@@ -24,7 +29,11 @@ const SignIn = () => {
   return (
     <div className="block p-6 mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign In</h2>
-      {error && <p>{error}</p>}
+      {error && (
+        <p className="text-center bg-red-400 p-2 rounded-md text-white mb-4">
+          {error}
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-6">
           <label

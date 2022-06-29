@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 const SignUp = () => {
@@ -9,6 +9,7 @@ const SignUp = () => {
   const { signup } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -18,9 +19,10 @@ const SignUp = () => {
     try {
       setError("");
       setLoading(true);
-      signup(emailRef.current.value, passwordRef.current.value);
+      await signup(emailRef.current.value, passwordRef.current.value);
+      navigate("/sign-in");
     } catch (error) {
-      setError("Failled to create an account");
+      setError(error.message);
     }
     setLoading(false);
   }
@@ -28,7 +30,11 @@ const SignUp = () => {
   return (
     <div className="block p-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto">
       <h2 className="text-xl font-semibold mb-6 text-center">Sign Up</h2>
-      {error && <p>{error}</p>}
+      {error && (
+        <p className="text-center bg-red-400 p-2 rounded-md text-white mb-4">
+          {error}
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-6">
           <label
