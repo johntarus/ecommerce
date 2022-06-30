@@ -160,7 +160,6 @@ const Cart = () => {
               </Link>
             </div>
           </div>
-          ;
         </>
       )}
     </motion.div>
