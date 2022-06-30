@@ -1,8 +1,23 @@
 import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import { motion } from "framer-motion";
 
 const SignUp = () => {
+  const pageAnimate = {
+    hidden: {
+      opacity: 0,
+      y: 25,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.3,
+      },
+    },
+  };
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
@@ -28,7 +43,12 @@ const SignUp = () => {
   }
 
   return (
-    <div className="block p-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto">
+    <motion.div
+      className="block p-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto"
+      variants={pageAnimate}
+      initial="hidden"
+      animate="visible"
+    >
       <h2 className="text-xl font-semibold mb-6 text-center">Sign Up</h2>
       {error && (
         <p className="text-center bg-red-400 p-2 rounded-md text-white mb-4">
@@ -163,7 +183,7 @@ const SignUp = () => {
           </Link>
         </p>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

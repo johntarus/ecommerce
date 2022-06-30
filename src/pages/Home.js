@@ -56,7 +56,7 @@ const Home = () => {
       <FadeInWhenVisible>
         <Newsletter />
       </FadeInWhenVisible>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
