@@ -44,7 +44,7 @@ const SignUp = () => {
 
   return (
     <motion.div
-      className="block p-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto"
+      className="block p-6 mb-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto"
       variants={pageAnimate}
       initial="hidden"
       animate="visible"
