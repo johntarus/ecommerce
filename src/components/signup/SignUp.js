@@ -44,7 +44,7 @@ const SignUp = () => {
 
   return (
     <motion.div
-      className="block p-6 mb-6 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto"
+      className="block p-6 mb-12 sm:mt-12 rounded-lg shadow-lg bg-white max-w-sm m-auto"
       variants={pageAnimate}
       initial="hidden"
       animate="visible"
@@ -141,14 +141,6 @@ const SignUp = () => {
             ref={confirmPasswordRef}
           ></input>
         </div>
-        {/* <div className="flex justify-center items-center mb-4">
-          <a
-            href="#!"
-            className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
-          >
-            Forgot password?
-          </a>
-        </div> */}
         <button
           type="submit"
           disabled={loading}
@@ -179,7 +171,7 @@ const SignUp = () => {
             to="/sign-in"
             className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
           >
-            Sign In
+            Sign Up
           </Link>
         </p>
       </form>
