@@ -12,7 +12,6 @@ import { AuthProvider } from "./context/AuthContext";
 import SignIn from "./components/signup/SignIn";
 import SignUp from "./components/signup/SignUp";
 import Successful from "./components/signup/Successful";
-import Footer from "./components/Home/Footer";
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/successful" element={<Successful />} />
               </Routes>
-              <Footer />
             </div>
           </Router>
         </>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import about from "../assets/images/about.png";
+import Footer from "../components/Home/Footer";
 
 const About = () => {
   const textAnimate = {
@@ -42,6 +43,7 @@ const About = () => {
           informality among owner, salespeople, and clientele.
         </p>
       </motion.div>
+      <Footer />
     </div>
   );
 };

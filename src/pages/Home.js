@@ -7,6 +7,7 @@ import Overview from "../components/Home/Overview";
 import Featured from "../components/Home/Featured";
 import History from "../components/Home/History";
 import Newsletter from "../components/Home/Newsletter";
+import Footer from "../components/Home/Footer";
 
 function FadeInWhenVisible({ children }) {
   const controls = useAnimation();
@@ -55,6 +56,7 @@ const Home = () => {
       <FadeInWhenVisible>
         <Newsletter />
       </FadeInWhenVisible>
+      <Footer />
     </>
   );
 };
