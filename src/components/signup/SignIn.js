@@ -150,7 +150,7 @@ const SignIn = () => {
             to="/sign-up"
             className="text-[#9333EA] hover:text-[#9333EA] focus:text-[#9333EA] transition duration-200 ease-in-out"
           >
-            Sign In
+            Sign Up
           </Link>
         </p>
       </form>
