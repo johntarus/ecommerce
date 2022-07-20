@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Ecommerce App using React, Redux, Context-API, Firebase
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
