@@ -17,4 +17,17 @@ Setup Firebase from [firebase.google.com](https://firebase.google.com/?gclid=Cj0
 ### 3. Create .env file
 Create .env file in project folder
 Enter these lines to that:
+```
+REACT_APP_FIREBASE_API_KEY=""
+REACT_APP_FIREBASE_AUTH_DOMAIN=""
+REACT_APP_FIREBASE_PROJECT_ID=""
+REACT_APP_FIREBASE_STORAGE_BUCKET=0
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=0
+REACT_APP_FIREBASE_APP_ID=""
+```
+### 5. Run the project
+```
+npm install
+npm start
+```
 
