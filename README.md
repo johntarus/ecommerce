@@ -9,7 +9,12 @@ You can find the live demo of the project here: [live demo](https://ecom-merce.v
 ## Run Locally
 ### 1. Run Locally
 ```
-$ git clone 
-$ cd 
+$ git clone https://github.com/johntarus/ecommerce.git
+$ cd ecommerce
 ```
+### 2. Setup Firebase
+Setup Firebase from [firebase.google.com](https://firebase.google.com/?gclid=Cj0KCQjwof6WBhD4ARIsAOi65agFhKHqURky_oLI7P93AGy1I5cDxfJEJUG8Q3C170GKVkMnFsJ9Sv0aAiepEALw_wcB&gclsrc=aw.ds)
+### 3. Create .env file
+Create .env file in project folder
+Enter these lines to that:
 
