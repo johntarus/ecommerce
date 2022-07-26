@@ -6,3 +6,10 @@
 ## Demo
 You can find the live demo of the project here: [live demo](https://ecom-merce.vercel.app)
 
+## Run Locally
+### 1. Run Locally
+```
+$ git clone 
+$ cd 
+```
+
