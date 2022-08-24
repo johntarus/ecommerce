@@ -36,4 +36,5 @@ jobs:
     - name: Build the app
       run: npm run build
     - name: Start the app
-      run: npm start
+      run: npm start &&
+           npx wait-on --timeout 4000
