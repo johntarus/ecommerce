@@ -26,16 +26,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
+    "lint": "eslint src --ext ts; exit 0",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "precommit": "lint-staged",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{ts,tsx}": "tsc-files --noEmit --incremental false",
-    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx}": [
+      "npm run eslint",
+      "npm run prettier",
+      "npm run test --watchAll=false --findRelatedTests --bail"
+    ]
   },
   "eslintConfig": {
     "extends": [
