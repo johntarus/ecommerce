@@ -1,0 +1,296 @@
+[33mcommit 86cfe8776ffb8b2c1d2c43193586e68fdef561c0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Aug 26 10:20:53 2022 +0300
+
+    eslint setup
+
+[33mcommit 3d14ee23105c27d8eb1c56ce5d5cd38cce7aab68[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Aug 26 09:35:58 2022 +0300
+
+    yaml file configuration
+
+[33mcommit b816690a2fc86b59ac3470e4d454fefa8b5df756[m
+Merge: 18499c1 e497ae5
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Aug 26 09:22:49 2022 +0300
+
+    Merge branch 'main' of https://github.com/johntarus/ecommerce
+
+[33mcommit 18499c1a15790ce2a020069384781aab53c49c70[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Aug 26 09:12:54 2022 +0300
+
+    added github ci pipeline
+
+[33mcommit e497ae53fed9eee97117b9210b05f55f55ac4491[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 10:46:15 2022 +0300
+
+    starting app
+    
+    starting app
+
+[33mcommit a924bc1c6c0cff97f37a266f468222fe62276c52[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 10:40:20 2022 +0300
+
+    setting start timeout to 40 seconds
+    
+    setting start timeout to 40 seconds
+
+[33mcommit f0ddbcca7292bd21044e3cc547800d8c7106b31d[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 10:32:13 2022 +0300
+
+    start the app
+    
+    start the app
+
+[33mcommit 035c4f1dc2aea725e40dc6d3f18ff120fd32a411[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 10:26:31 2022 +0300
+
+    building the app
+    
+    building the app
+
+[33mcommit 61212dbf4b741e6eb57c2de9ff2edc83cbd175b7[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 10:24:35 2022 +0300
+
+    building the app
+    
+    building the app
+
+[33mcommit b1ef2eed46a168f199c0572939a0dad0f2eb02bb[m
+Merge: b41c040 0cd44d2
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 09:20:48 2022 +0300
+
+    Merge pull request #1 from johntarus/workflows
+    
+    github workflows
+
+[33mcommit 0cd44d27dbf125edbe12feb159a7d3732528a2c0[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 09:14:49 2022 +0300
+
+    update tests
+    
+    updated tests
+
+[33mcommit e072df9ce2d1a4adaa5b52ba609a81e3cf93efdd[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 09:04:32 2022 +0300
+
+    sectrets typo
+    
+    sectrets typo
+
+[33mcommit d03edd3446ecb90e08d4157e977fee904f784247[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 09:02:50 2022 +0300
+
+    enviroment variables
+    
+    added env secrets to workflow
+
+[33mcommit 6599fa710db59f34e335b7dde6e6140dcade26c8[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 08:51:26 2022 +0300
+
+    update tests
+    
+    updated the tests
+
+[33mcommit 871874cf0dad41745e35777d159698f4c74b9400[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Aug 24 08:36:07 2022 +0300
+
+    github workflows
+    
+    added workflows in GitHub actions
+
+[33mcommit b41c040a0cc1db43dcf2fad0e64d3c117b417735[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Tue Jul 26 20:03:57 2022 +0300
+
+    updated reamde
+
+[33mcommit 4c41252a8d97de4123fbea4b546157cd1116d1ad[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Tue Jul 26 19:56:58 2022 +0300
+
+    readme
+    
+    readme
+
+[33mcommit f502202598221efc0a5f3ec548f87bb0116ce0b3[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Tue Jul 26 19:49:43 2022 +0300
+
+    readme
+
+[33mcommit 60c9cbda9c3317e7a0481bb322837c050f9c3b9b[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Tue Jul 26 19:46:42 2022 +0300
+
+    readme
+    
+    readme
+
+[33mcommit c3521139fb44318e3621a305d014780f1af7a869[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Tue Jul 26 19:38:25 2022 +0300
+
+    readme
+    
+    readme
+
+[33mcommit 736883689b8757a14ffc7c3c12629f496705f5d9[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Jul 20 23:53:47 2022 +0300
+
+    readme
+    
+    readme
+
+[33mcommit fbb8e2825585e587284f2c5ca24baa1d771bb12f[m
+Author: John Tarus <47330228+johntarus@users.noreply.github.com>
+Date:   Wed Jul 20 23:49:00 2022 +0300
+
+    readme
+    
+    readme
+
+[33mcommit 76f8f7998d0f97f65a5429b59a76a601634a7796[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:59:38 2022 +0300
+
+    adding .env file to gitignore
+
+[33mcommit c451a296011cd8120d45707e5dc7be2139b90c42[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:56:35 2022 +0300
+
+    adding .env file to gitignore
+
+[33mcommit 7d71de6d82f06ddc22ae51861b1cd48df54478ef[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:55:15 2022 +0300
+
+    env
+
+[33mcommit 0816edbafe8ec7c32ee80dbfcd3ddb03755b92aa[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:33:56 2022 +0300
+
+    Revert "removing pushed env file"
+    
+    This reverts commit fe7bb606b8175d606072cfe8c0f9681ea203f9c8.
+
+[33mcommit bd79e072afe60f0d01e2b9c436186806925d0cec[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:33:43 2022 +0300
+
+    Revert "pushing back env file"
+    
+    This reverts commit ae46b841eabc299ccf3fc2a3f5d32af12a24d0f6.
+
+[33mcommit c06c3435da1ecfb2745b3a41a876bef4cc7868a3[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 14:33:13 2022 +0300
+
+    Revert "env"
+    
+    This reverts commit e6c7f120bfb40ee2218fdda12113ea74c4875925.
+
+[33mcommit f588cbe2d877d01b116735970f64cad541375e35[m
+Merge: aa69854 1cac0e6
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 13:58:54 2022 +0300
+
+    Merge branch 'main' of https://github.com/johntarus/ecommerce
+
+[33mcommit aa698542757eb3f41602696a1a0d76fe7a9dfbc8[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Sun Jul 3 13:57:14 2022 +0300
+
+    pushing back env file
+
+[33mcommit 1cac0e670cb927336e3f0383c4a5f3608b1b8d8b[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 14:05:28 2022 +0300
+
+    env
+
+[33mcommit 1c0e4aef7b3503c97a4dfc2dfa73cfa9eb1cef9d[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 14:02:55 2022 +0300
+
+    removing pushed env file
+
+[33mcommit 26e6f73341fc3f45d4af1f7c024892f2aad978b6[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 10:16:37 2022 +0300
+
+    conditional rendering on sign up page
+
+[33mcommit 968546f630b956f0c362e7020fac4ab58a21c646[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 09:08:22 2022 +0300
+
+    styling sign in component
+
+[33mcommit eee6b48a0483df9d64800628dbf598190257e17e[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 00:09:14 2022 +0300
+
+    fixing typos
+
+[33mcommit c37d75379b44b5579f665e778bdcf853fdff3ba2[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 00:06:41 2022 +0300
+
+    logout page
+
+[33mcommit dd4858fcf1dbd58afd30459b0ad3d2716f9765d2[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 00:04:08 2022 +0300
+
+    making sign up page responsive
+
+[33mcommit c058ace810a69eaf6f59b615b569d7d4fc56f41d[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Fri Jul 1 00:02:10 2022 +0300
+
+    cart
+
+[33mcommit 1012fc8e68cf04702ee5c77f3d451c1304859038[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Thu Jun 30 23:59:17 2022 +0300
+
+    fixing cart logo position
+
+[33mcommit 4f4b9ae6be4a059b796f899ef84e5a212ab365eb[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Thu Jun 30 23:11:47 2022 +0300
+
+    making footer stick to the bottom of each page
+
+[33mcommit 7edad5df91b28ba73cdd64448f771c89d9fa7fb0[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Thu Jun 30 22:05:17 2022 +0300
+
+    styling cart
+
+[33mcommit 21a526b8432a8ec50aa83fb801608cd19cec9c14[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Thu Jun 30 19:45:20 2022 +0300
+
+    applying footer to all pages
+
+[33mcommit ef3ca201b6b3c8bbdd2d7e40461f1af699ba6f9b[m
+Author: johntarus <tarusjohn96@gmail.com>
+Date:   Wed Jun 29 16:54:
